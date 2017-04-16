@@ -18,10 +18,10 @@ jQuery(document).ready(function($){if($.cookie('popup_facebook_box')!='yes'){$('
 <div id='subscribe-box'>
 <center><p><i class='fa fa-envelope-o'></i> ĐĂNG KÝ NHẬN TIN QUA EMAIL</p></center>
 <div class='emailfield'>
-<form action='http://feedburner.google.com/fb/a/mailverify?uri=1acj9noatalupv2tsmu9d9k9oo' method='post' onsubmit='window.open(&#39;http://feedburner.google.com/fb/a/mailverify?uri=1acj9noatalupv2tsmu9d9k9oo, &#39;popupwindow&#39;, &#39;scrollbars=yes,width=550,height=520&#39;);return true' target='popupwindow'>
+<form action='http://feedburner.google.com/fb/a/mailverify?uri=BlogsBietTuot' method='post' onsubmit='window.open(&#39;http://feedburner.google.com/fb/a/mailverify?uri=BlogsBietTuot, &#39;popupwindow&#39;, &#39;scrollbars=yes,width=550,height=520&#39;);return true' target='popupwindow'>
 <input name='name' onblur='if (this.value == "") {this.value = "Your Name";}' onfocus='if (this.value == "Your Name") {this.value = "";}' type='text' value='Your Name'/>
 <input name='email' onblur='if (this.value == "") {this.value = "Your Email";}' onfocus='if (this.value == "Your Email") {this.value = "";}' type='text' value='Your Email'/>
-<input name='uri' type='hidden' value='1acj9noatalupv2tsmu9d9k9oo'/>
+<input name='uri' type='hidden' value='BlogsBietTuot'/>
 <input name='loc' type='hidden' value='en_US'/>
 <input class='submitbutton' type='submit' value='Subscribe Now'/>
 </form>
