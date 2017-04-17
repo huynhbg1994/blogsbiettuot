@@ -1,0 +1,229 @@
+/*------------------------------------------------------------
+Floating Social Share Button Bar Version 2.0
+Designed by:: http://www.123tailieufree.com
+Shares Count Code by:: http://donreach.com/social-share-count
+issued under GNU GPL Licence
+Icons:: FontAwesome 4.2.0
+**************** Do Not Remove These Credits *****************
+------------------------------------------------------------*/
+.twistBlogger_SocialBar {
+  position: fixed;
+  bottom: 30%;
+  padding: 0;
+  left:0;
+  background: none;
+  text-align: center;
+  margin: 0 auto;
+  z-index: 99999999;
+}
+.twistBlogger_SocialBar label:hover {
+  cursor: pointer;
+  opacity:1;
+}
+.twistBlogger_SocialBar label {
+  text-align: center;
+  opacity: 0.4;
+  width: 50px;
+  background: #3A3939;
+  color: #FFF;
+  border: 0;
+  font-family: FontAwesome;
+  display: block;
+  font-size: 12px;
+  padding: 0px 0px;
+  border-radius: 0;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  position: absolute;
+  line-height: 1.5em;
+  margin-top: 346px;
+}
+input.ShowHide_Button:checked + label {
+  transform-origin: 50% 0%!important;
+  -webkit-transform-origin: 50% 0%!important;
+  -moz-transform-origin: 50% 0%!important;
+  -ms-transform-origin: 50% 0%!important;
+  -o-transform-origin: 50% 0%!important;
+  opacity: 1;
+  -webkit-transform: translateX(0px) rotateY(-180deg);
+  -moz-transform: translateX(0px) rotateY(-180deg);
+  -ms-transform: translateX(0px) rotateY(-180deg);
+  -o-transform: translateX(0px) rotateY(-180deg);
+  transform: translateX(0px) rotateY(-180deg);
+  -webkit-transition-delay: 0.2s;
+  -moz-transition-delay: 0.2s;
+  -ms-transition-delay: 0.2s;
+  -o-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+  border: 1px solid #3A3939;
+  border-radius: 50px 0px 0px 50px;
+  width: 30px;
+  max-width: 30px;
+}
+input.ShowHide_Button ~ .ShowHideMe {
+  -webkit-transition: .6s all cubic-bezier(0.730, -0.485, 0.145, 1.620);
+  -moz-transition: .6s all cubic-bezier(0.730, -0.485, 0.145, 1.620);
+  -ms-transition: .6s all cubic-bezier(0.730, -0.485, 0.145, 1.620);
+  -o-transition: .6s all cubic-bezier(0.730, -0.485, 0.145, 1.620);
+  transition: .6s all cubic-bezier(0.730, -0.485, 0.145, 1.620);
+}
+input.ShowHide_Button:checked ~ .ShowHideMe {
+  margin-left: -75px !important;
+}
+input.ShowHide_Button {
+  display: none;
+}
+.twistBlogger_SocialBar .social_menu {
+  display: inline-block;
+  float: left;
+  list-style:none;
+  max-width:50px;
+  margin: 0;
+  padding: 0;
+}
+.twistBlogger_SocialBar .social_menu .button_facebook {
+  background: #3a579a;
+}
+.twistBlogger_SocialBar .social_menu .button_facebook:hover {
+  background: #314a83;
+}
+.twistBlogger_SocialBar .social_menu .button_twitter {
+  background: #00abf0;
+}
+.twistBlogger_SocialBar .social_menu .button_twitter:hover {
+  background: #0092cc;
+}
+.twistBlogger_SocialBar .social_menu .button_googleplus {
+  background: #df4a32;
+}
+.twistBlogger_SocialBar .social_menu .button_googleplus:hover {
+  background: #be3f2b;
+}
+.twistBlogger_SocialBar .social_menu .button_pinterest {
+  background: #cd1c1f;
+}
+.twistBlogger_SocialBar .social_menu .button_pinterest:hover {
+  background: #ae181a;
+}
+.twistBlogger_SocialBar .social_menu .button_stumbleupon {
+  background: #ea4b24;
+}
+.twistBlogger_SocialBar .social_menu .button_stumbleupon:hover {
+  background: #c7401f;
+}
+.twistBlogger_SocialBar .social_menu .button_linkedin {
+  background: #2554BF;
+}
+.twistBlogger_SocialBar .social_menu .button_linkedin:hover {
+  background: #224EB4;
+}
+.twistBlogger_SocialBar .social_menu .button_facebook .count,
+.twistBlogger_SocialBar .social_menu .button_twitter .count,
+.twistBlogger_SocialBar .social_menu .button_googleplus .count,
+.twistBlogger_SocialBar .social_menu .button_pinterest .count,
+.twistBlogger_SocialBar .social_menu .button_stumbleupon .count,
+.twistBlogger_SocialBar .social_menu .button_linkedin .count {
+  color: #fff!important;
+  padding-top: 4px;
+  font-size: 13px !important;
+  line-height: 1.2em;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.twistBlogger_SocialBar .social_menu > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.twistBlogger_SocialBar .social_menu .share {
+  background: #FFF;
+  color: #807F7F;
+  font-size: 11px;
+  height: 45px !important;
+}
+.twistBlogger_SocialBar .social_menu .share .count.h4 {
+  font-size: 18px;
+  font-family: sans-serif;
+  color: #424242;
+  height: 25px !important;
+  line-height: 1.5em;
+  font-weight: bold;
+  margin: 0px !important;
+}
+.twistBlogger_SocialBar .social_menu .share .h6 {
+  padding-bottom: 3px;
+  font-family: sans-serif;
+  margin: 0px !important;
+  line-height: 1.5em;
+  font-size: 11px;
+}
+.twistBlogger_SocialBar .social_menu > ul > li {
+  margin: 0px 0px 0px 0px;
+  position: relative;
+  text-align: center;
+  list-style: none;
+  list-style-type: none;
+  padding: 0px;
+  border: 0px;
+  border-left: 0 solid rgba( 0,0,0,.4);
+  height: 50px;
+  width: 50px;
+  overflow: hidden;
+  display: block;
+  box-sizing: border-box;
+  background: none;
+  box-sizing: content-box;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.twistBlogger_SocialBar .social_menu > ul > li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 5px 0px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.twistBlogger_SocialBar .social_menu > ul > li:hover {
+  border-left: 5px solid rgba( 0,0,0,.3);
+  width: 40px;
+}
+.twistBlogger_SocialBar .social_menu > ul > li i {
+  color: #fff !important;
+  font-family: FontAwesome;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1em;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.twistBlogger_SocialBar .social_menu > ul > li:hover i {
+  opacity: 0.9;
+}
+@media only screen and (min-width:768px) and (max-width:979px) {
+.twistBlogger_SocialBar {
+  bottom: 20% !important;
+}
+}
+@media only screen and (min-width:480px) and (max-width:767px) {
+.twistBlogger_SocialBar {
+  bottom: 15% !important;
+}
+}
+ @media only screen and (max-width:479px) {
+.twistBlogger_SocialBar {
+  bottom: 10% !important;
+  display: none !important; /*---delete this code line to make it appear on mobile--*/
+}
+}
